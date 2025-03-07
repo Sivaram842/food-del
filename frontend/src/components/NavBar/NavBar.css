@@ -96,6 +96,62 @@ button:hover {
 
 }
 
+.navbar-profile {
+    position: relative;
+
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+    margin-top: -3px;
+}
+
+.nav-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    /* ✅ Reduced spacing between icon and text */
+    padding: 4px 0;
+    /* ✅ Less vertical spacing */
+    cursor: pointer;
+}
+
+.nav-profile-dropdown li:hover {
+    color: tomato;
+}
+
+.nav-profile-dropdown img {
+    width: 30px;
+}
+
+.nav-profile-dropdown hr {
+    width: 100%;
+    height: 1px;
+    /* ✅ Ensures visibility */
+    background-color: tomato;
+    /* ✅ Adds color */
+    border: none;
+    /* ✅ Removes default border */
+    margin: 1px 0px;
+    /* ✅ Controls spacing */
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    background-color: #fff2ef;
+    padding: 12px 20px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+
+}
+
 @media (max-width:1050px) {
     .navbar .logo {
         width: 140px;
