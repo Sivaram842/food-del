@@ -1,0 +1,157 @@
+/* Fix for navbar full width */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f8f4f4;
+    /* Ensuring it has a background */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    /* Ensures navbar stays on top */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Ensure logo is aligned properly */
+.logo {
+    height: 30px;
+    cursor: pointer;
+    width: 150px;
+}
+
+/* Fix for navbar menu */
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.navbar-menu li {
+    transition: color 0.3s;
+}
+
+.navbar-menu li:hover {
+    color: #ff6600;
+
+}
+
+/* Fix for navbar-right */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Fix for search and basket icons */
+.navbar-right img {
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Fix for search icon */
+.navbar-search-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Fix for red dot indicator */
+.navbar-search-icon .dot {
+    width: 8px;
+    height: 8px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
+
+/* Fix button alignment */
+button {
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #cc5500;
+}
+
+.navbar .active {
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+
+}
+
+@media (max-width:1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+
+}
+
+
+@media (max-width:900px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+
+}
+
+
+@media (max-width:750px) {
+
+
+    .navbar-menu {
+        display: none;
+    }
+
+}

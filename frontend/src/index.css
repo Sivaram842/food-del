@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: outfit;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ffffff;
+  /* Set full page background to white */
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* Ensure elements stack properly */
+  align-items: center;
+  /* Center align content */
+  justify-content: flex-start;
+  /* Start from the top */
+  padding-top: 80px;
+  /* Prevent navbar from overlapping content */
+
+}
+
+.app {
+  width: 100%;
+
+  max-width: 1400px;
+
+
+  margin: 0 auto;
+
+}
+
+
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* Ensures elements stack properly */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
