@@ -17,9 +17,11 @@
 
 /* Ensure logo is aligned properly */
 .logo {
-    height: 30px;
+    height: 34px;
     cursor: pointer;
-    width: 150px;
+    width: 173px;
+    object-fit: contain;
+
 }
 
 /* Fix for navbar menu */
