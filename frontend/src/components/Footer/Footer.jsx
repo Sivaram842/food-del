@@ -1,14 +1,16 @@
 import React from 'react'
 import './Footer.css'
 import { assets } from '../../assets/assets'
+import titleLogo from '../../assets/tt.png';
+
 
 const Footer = () => {
     return (
         <div className='footer' id='footer'>
             <div className="footer-content">
                 <div className="footer-content-left">
-                    <img src={assets.logo} alt="" />
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque, nunc et ultrices fermentum, orci odio faucibus nunc, ut cursus leo mauris non nulla. Proin sed justo ut purus suscipit tincidunt</p>
+                    <img src={titleLogo} alt="" />
+                    <p>Our Food Delivery App is a modern and user-friendly platform designed to bring your favorite meals straight to your doorstep with just a few taps. Whether you're craving traditional cuisine, fast food, or gourmet dishes, the app connects users with a wide range of local restaurants and cloud kitchens. Featuring real-time order tracking, secure online payments, and personalized recommendations, it ensures a seamless and satisfying food ordering experience. </p>
                     <div className="footer-social-icon">
                         <img src={assets.facebook_icon} alt="" />
                         <img src={assets.twitter_icon} alt="" />
@@ -27,15 +29,15 @@ const Footer = () => {
                 <div className="footer-content-right">
                     <h2>GET IN TOUCH</h2>
                     <ul>
-                        <li>+1 234 567 890</li>
-                        <li>contact@tomato.com</li>
+                        <li>+91 9032488161</li>
+                        <li>contact@TangyBite.com</li>
                     </ul>
                 </div>
 
             </div>
             <hr />
             <p className="footer-copyright">
-                Copyright 2025 @ Tomato.com All Right Reserved
+                Copyright 2025 @ TangyBite.com All Right Reserved
             </p>
         </div>
     )

@@ -9,14 +9,13 @@ a {
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: outfit;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 body {
   min-height: 100vh;
   background-color: #ffffff;
   /* Set full page background to white */
-  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   /* Ensure elements stack properly */
@@ -27,14 +26,16 @@ body {
   padding-top: 80px;
   /* Prevent navbar from overlapping content */
 
+
 }
 
 .app {
   width: 100%;
   margin: 0px 50px;
 
-  background: linear-gradient(135deg, #D0F0FD, #FFF4B2, #FFC1CC);
-
+  background: linear-gradient(rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)),
+    url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') no-repeat center center fixed;
   margin: 0 auto;
 
 }

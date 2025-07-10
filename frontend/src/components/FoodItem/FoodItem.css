@@ -3,14 +3,18 @@
     margin: auto;
     border-radius: 15px;
     box-shadow: 0px 0px 10px #00000015;
-    transition: 3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
     animation: fadeIn 1s;
-
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
 }
 
+/* Modern hover effect */
 .food-item:hover {
-    transform: scale(1.05);
-    transition: 0.2s;
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, 0.95);
+    filter: brightness(1.05);
 }
 
 .food-item-img {
@@ -80,4 +84,16 @@
     right: 15px;
     cursor: pointer;
     border-radius: 50%;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
