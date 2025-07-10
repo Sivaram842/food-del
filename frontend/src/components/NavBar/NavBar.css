@@ -5,7 +5,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 30px;
-    background-color: #f8f4f4;
+    background: linear-gradient(135deg, #D0F0FD, #FFF4B2, #FFC1CC);
+
+    background-color: #F9F6F1;
     /* Ensuring it has a background */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     position: fixed;

@@ -31,9 +31,9 @@ body {
 
 .app {
   width: 100%;
+  margin: 0px 50px;
 
-  max-width: 1400px;
-
+  background: linear-gradient(135deg, #D0F0FD, #FFF4B2, #FFC1CC);
 
   margin: 0 auto;
 
